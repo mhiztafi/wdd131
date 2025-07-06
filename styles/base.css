@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.highlight {
+  color: #ffd166; /* Example highlight color */
+  font-weight: bold;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #0a9396;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr; /* about me wider than web dev */
+  align-items: stretch; /* ensures both columns match height */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100%; /* ensures it stretches to fill the row */
+}
+
+.card h2 {
+  background-color: #005f73;
+  color: white;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+#lastModified {
+  color: #ffd166;
+}
+
+.card-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-content img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.center-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 90px;        /* adjust image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text {
+  flex: 1;
+  text-align: right;   /* align text to the right */
+}
