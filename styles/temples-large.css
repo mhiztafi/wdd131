@@ -1,0 +1,15 @@
+#menuBtn {
+  display: none;
+}
+
+.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

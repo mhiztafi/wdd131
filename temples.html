@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+
+  <!-- JavaScript -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menuBtn" aria-label="Menu">&#9776;</button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Beautiful Temples Around the World</h2>
+    <section class="gallery">
+      <!-- Use placeholder image for now -->
+      <figure>
+        <img src="images/temple0.jpg" alt="Temple 1">
+        <figcaption>Temple 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple1.jpg" alt="Temple 2">
+        <figcaption>Temple 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="Temple 3">
+        <figcaption>Temple 3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Temple 4">
+        <figcaption>Temple 4</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple0.jpg" alt="Temple 5">
+        <figcaption>Temple 5</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple1.jpg" alt="Temple 6">
+        <figcaption>Temple 6</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="Temple 7">
+        <figcaption>Temple 7</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Temple 8">
+        <figcaption>Temple 8</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple0.jpg" alt="Temple 9">
+        <figcaption>Temple 9</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 🌍 Peace Oyovwe</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
