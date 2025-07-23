@@ -92,7 +92,7 @@ header {
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
-    align-items: stretch;
+    align-items: block;
   }
 }
 
