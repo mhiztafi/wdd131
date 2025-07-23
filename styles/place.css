@@ -74,15 +74,13 @@ header {
 
 
 /* Optional: lock card widths */
-.data-card {
-    width: 40%;
-}
+.data-card,
 .weather-card {
-  width: 30%;
+  width: 40%;
 }
 
 .card {
-  width: 35%;                    /* Reduced width from 48% */
+  width: 40%;                    /* Reduced width from 48% */
   padding: 1rem;                 /* Less padding */
   background-color: #fff;
   border-radius: 12px;
