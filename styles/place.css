@@ -40,7 +40,7 @@ header {
   left: 0;
 }
 
-.hero::before {
+.hero::after {
   content: "";
   position: absolute;
   top: 0;
