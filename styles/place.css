@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #66ccff;
+  --background: #f0f8ff;
+  --text-color: #222;
+  --accent-color: #e6f7ff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--background);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between; /* separates left and right */
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.data-card {
+  margin-top: -5rem; /* Moves the data card up slightly */
+}
+
+.weather-card {
+  margin-top: 11rem;  /* Moves the weather card down slightly */
+}
+
+
+/* Optional: lock card widths */
+.data-card {
+    width: 40%;
+}
+.weather-card {
+  width: 30%;
+}
+
+.card {
+  width: 35%;                    /* Reduced width from 48% */
+  padding: 1rem;                 /* Less padding */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #222;
+}
+
+/* Stack on small screens */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+
+.weather {
+  margin-top: 1.5rem;
+}
+
+.weather-card h2 {
+  font-size: 1rem;              /* Smaller than data card */
+  padding: 0.5rem 1rem;         /* Slightly less padding */
+  background-color: #3b82f6;    /* Optional: a lighter blue */
+}
+
+
+.weather p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  background-color: #1e3a8a;      /* Blue background */
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: block;                /* Full width of parent */
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;            /* Optional: Center the text */
+}
+
+footer {
+  background-color: var(--primary-color); /* dark blue */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+

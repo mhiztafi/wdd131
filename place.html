@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Delta State</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Delta State</h1>
+  </header>
+<section class="hero">
+  <picture>
+    <source srcset="images/Delta-hero-large.webp" media="(min-width: 768px)" />
+    <img src="images/Delta-hero-small.webp" alt="Delta State landscape" />
+  </picture>
+
+  <div class="hero-content">
+    <!-- Data Card - Left -->
+    <section class="card data-card">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 17,698 km²</li>
+        <li><strong>Population:</strong> Approximately 5.6 million (2022 est.)</li>
+        <li><strong>Capital:</strong> Asaba</li>
+        <li><strong>Language:</strong> English (official), Urhobo, Itsekiri, Isoko, Ijaw</li>
+        <li><strong>Currency:</strong> Nigerian Naira (₦)</li>
+        <li><strong>Time Zone:</strong> West Africa Time (WAT), UTC +1</li>
+        <li><strong>Calling Code:</strong> +234</li>
+        <li><strong>Internet TLD:</strong> .ng</li>
+      </ul>
+    </section>
+
+    <!-- Weather Card - Right -->
+    <section class="card weather-card">
+      <h2>Weather <span class="emoji" aria-hidden="true">🌤️</span></h2>
+      <p>Temperature: <span id="temp">2</span> °C</p>
+      <p>Humidity: <span id="humidity">85</span>%</p>
+      <p>Conditions: <span id="condition">Partly Cloudy</span></p>
+      <p>Wind Chill: <span id="chill">N/A</span></p>
+         </section>
+  </div>
+</section>
+
+
+   <footer>
+    <p>&copy; <span id="year"></span> 🌍 Peace Oyovwe   🌍 Nigeria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
