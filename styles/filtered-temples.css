@@ -1,108 +1,86 @@
-:root {
-  --primary: #003366;
-  --accent: #0055aa;
-  --text: #000;
-  --background: #fff;
-}
-
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: var(--background);
-  color: var(--text);
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
 }
 
 header {
-  background-color: var(--primary);
+  background: #2c3e50;
   color: white;
   padding: 1rem;
-  text-align: center;
+  position: relative;
 }
 
-header nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
-nav a,
-nav button {
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  background-color: var(--accent);
-  color: white;
+#menuBtn {
+  background: none;
   border: none;
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: block;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s;
+}
+
+.navigation a:hover {
+  background: #1abc9c;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-nav a:hover,
-nav button:hover {
-  background-color: #0077dd;
-  text-decoration: underline;
-}
-
-nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid white;
+.navigation.open {
+  display: flex;
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
-@media screen and (min-width: 640px) {
-  .gallery {
+.gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  }
 }
 
-.temple-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #fefefe;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  transition: transform 0.3s ease;
+figure {
+  margin: 0;
+  text-align: center;
 }
 
-.temple-card:hover {
-  transform: scale(1.02);
-}
-
-.temple-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.temple-card:hover img {
-  transform: scale(1.02);
-}
-
-.temple-card .content {
-  padding: 1rem;
-}
-
-.temple-card h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 footer {
+  background: #2c3e50;
+  color: white;
   text-align: center;
-  background-color: #eee;
   padding: 1rem;
-  font-size: 0.9rem;
 }
+
 
 
 
