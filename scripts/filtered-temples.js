@@ -54,21 +54,21 @@ const temples = [
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 40000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-evening-1826555-wallpaper.jpg"
+    imageUrl: "images/temple3.jpg"
   },
   {
     templeName: "St. George Utah",
     location: "St. George, Utah",
     dedicated: "1877, April, 6",
     area: 110000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-lds-1320360-wallpaper.jpg"
+    imageUrl: "images/temple2.jpg"
   },
   {
     templeName: "Accra Ghana",
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 17500,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-786694-wallpaper.jpg"
+    imageUrl:  "images/temple1.jpg"
   }
 ];
 

@@ -21,23 +21,16 @@ header {
 
 header nav {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem
-}
-
-nav {
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   padding: 1rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  color: #0056b3;
-}
-
+nav a,
 nav button {
-  margin: 0.5rem;
   padding: 0.5rem 1rem;
+  text-decoration: none;
   background-color: var(--accent);
   color: white;
   border: none;
@@ -45,8 +38,15 @@ nav button {
   cursor: pointer;
 }
 
+nav a:hover,
 nav button:hover {
   background-color: #0077dd;
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
 }
 
 main {
@@ -56,18 +56,34 @@ main {
   padding: 1rem;
 }
 
+@media screen and (min-width: 640px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .temple-card {
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #fefefe;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.02);
 }
 
 .temple-card img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.temple-card:hover img {
+  transform: scale(1.02);
 }
 
 .temple-card .content {
@@ -85,5 +101,18 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+/* Optional: Responsive nav toggle button for smaller screens */
+#menuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: none; /* Change to block if using responsive nav */
+}
+
 
 
