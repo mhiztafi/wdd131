@@ -54,7 +54,7 @@ const temples = [
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 40000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-lds-1826555-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-evening-1826555-wallpaper.jpg"
   },
   {
     templeName: "St. George Utah",
