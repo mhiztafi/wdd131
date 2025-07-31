@@ -1,0 +1,36 @@
+@media screen and (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .temple-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .temple-card:hover {
+    transform: scale(1.02);
+  }
+
+  .temple-card h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+
+  .temple-card .content {
+    padding: 1rem;
+  }
+}
+
