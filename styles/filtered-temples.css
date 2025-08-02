@@ -1,86 +1,43 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fdfdfd;
-  color: #333;
-}
-
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem;
-  position: relative;
-}
-
-h1 {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-}
-
-#menuBtn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.8rem;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  display: block;
-}
-
-.navigation {
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.navigation a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem;
-  transition: background 0.3s;
-}
-
-.navigation a:hover {
-  background: #1abc9c;
-  border-radius: 5px;
-}
-
-.navigation.open {
-  display: flex;
-}
-
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.gallery {
+#templeContainer {
   display: grid;
-  grid-template-columns: 1fr; /* Forces 1 image per row */
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 
-figure {
-  margin: 0;
-  text-align: center;
+.temple-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-figure img {
-  max-width: 100%;
-  border-radius: 8px;
+.temple-card:hover {
+  transform: scale(1.02);
 }
 
-footer {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.temple-card .content {
   padding: 1rem;
 }
+
+.temple-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
 
 
 

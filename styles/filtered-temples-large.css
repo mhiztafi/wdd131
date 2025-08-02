@@ -1,13 +1,6 @@
 @media (min-width: 768px) {
-  body {
-    font-size: 1.1rem;
-  }
-
+  /* Make the main grid display 3 temple cards per row */
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -26,20 +19,26 @@
     transform: scale(1.02);
   }
 
-  .temple-card h2 {
-    font-size: 1.4rem;
-    margin: 0.5rem 0;
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
   }
 
   .temple-card .content {
     padding: 1rem;
   }
 
-  .temple-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  .temple-card h2 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+
+  body {
+    font-size: 1.1rem;
   }
 }
+
+
 
 
