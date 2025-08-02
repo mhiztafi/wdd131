@@ -60,9 +60,10 @@ main {
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Forces 1 image per row */
   gap: 1rem;
 }
+
 
 figure {
   margin: 0;
