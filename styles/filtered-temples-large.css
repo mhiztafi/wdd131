@@ -1,11 +1,10 @@
-@media (min-width: 768px) {
-  /* Make the main grid display 3 temple cards per row */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screen */
     gap: 2rem;
     padding: 2rem;
   }
+}
 
   .temple-card {
     background-color: #f8f8f8;
@@ -37,7 +36,7 @@
   body {
     font-size: 1.1rem;
   }
-}
+
 
 
 

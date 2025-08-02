@@ -1,8 +1,10 @@
 main {
-  max-width: 960px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 1rem;
   padding: 1rem;
 }
+
 
 #templeContainer {
   display: grid;
