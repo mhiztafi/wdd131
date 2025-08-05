@@ -15,7 +15,8 @@ products.forEach(p => {
   select.appendChild(opt);
 });
 
-// Footer year
+// Set footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+
 
 
