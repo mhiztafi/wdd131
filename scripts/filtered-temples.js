@@ -1,4 +1,5 @@
 console.log("Filtered temples script loaded");
+
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -68,19 +69,34 @@ const temples = [
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 17500,
-    imageUrl:  "images/temple1.jpg"
+    imageUrl: "images/temple1.jpg"
   }
 ];
 
 function displayTemples(templesArray) {
   const container = document.getElementById("templeContainer");
+  if (!container) {
+    console.error("Container #templeContainer not found.");
+    return;
+  }
+
   container.innerHTML = "";
 
   templesArray.forEach(temple => {
     const card = document.createElement("div");
     card.classList.add("temple-card");
+
+    // ✅ Apply small-img class to these 3 temples
+    const smallTemples = ["Rome Italy", "St. George Utah", "Accra Ghana"];
+    const isSmall = smallTemples.includes(temple.templeName);
+
     card.innerHTML = `
-      <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName}">
+      <img 
+        loading="lazy" 
+        src="${temple.imageUrl}" 
+        alt="${temple.templeName}" 
+        class="${isSmall ? 'small-img' : ''}"
+      >
       <div class="content">
         <h2>${temple.templeName}</h2>
         <p><strong>Location:</strong> ${temple.location}</p>
@@ -88,6 +104,7 @@ function displayTemples(templesArray) {
         <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
       </div>
     `;
+
     container.appendChild(card);
   });
 }
@@ -120,10 +137,17 @@ function filterTemples(filter) {
 }
 
 document.querySelectorAll("nav button").forEach(button =>
-  button.addEventListener("click", () => filterTemples(button.dataset.filter))
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    filterTemples(filter);
+  })
 );
 
-displayTemples(temples); // Initial display
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("modified").textContent = document.lastModified;
+displayTemples(temples);
 
+// Footer updates
+const yearSpan = document.getElementById("year");
+if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+const modifiedSpan = document.getElementById("modified");
+if (modifiedSpan) modifiedSpan.textContent = document.lastModified;

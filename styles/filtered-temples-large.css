@@ -1,43 +1,56 @@
-@media screen and (min-width: 768px) {
-  main {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screen */
-    gap: 2rem;
-    padding: 2rem;
-  }
+  imgmain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  gap: 2rem;
+  padding: 2rem;
 }
 
-  .temple-card {
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
+/* Optional: Limit to 3 rows if you want */
+imgmain > .temple-card:nth-child(n+10) {
+  display: none; /* Only show first 9 temple cards (3 rows × 3 cols) */
+}
 
-  .temple-card:hover {
-    transform: scale(1.02);
-  }
+.temple-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  .temple-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
+.temple-card:hover {
+  transform: scale(1.02);
+}
 
-  .temple-card .content {
-    padding: 1rem;
-  }
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .temple-card h2 {
-    font-size: 1.4rem;
-    margin: 0.5rem 0;
-  }
+.temple-card h2 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
 
+.temple-card .content {
+  padding: 1rem;
+}
+
+/* Responsive font size */
+@media (min-width: 768px) {
   body {
     font-size: 1.1rem;
   }
+}
 
+/* Gallery for smaller screens if needed */
+@media (max-width: 1023px) {
+  imgmain {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 
-
-
-
+  imgmain > .temple-card {
+    display: block; /* Show all cards on small screens */
+  }
+}

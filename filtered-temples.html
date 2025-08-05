@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A dynamic album of temples filters using JavaScript, showcasing temple photo and details." />
+  <meta name="description" content="A dynamic album of temples with filters using JavaScript, showcasing temple photos and details." />
   <meta name="author" content="Peace Oyovwe" />
   <title>Filtered Temples Album</title>
 
-<!-- Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/temples.css">
-<link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
 
-  
- </head>
+</head>
 <body>
   <header>
     <h1>Temple Gallery</h1>
-    <nav>
-       <button data-filter="home">Home</button>
+    <nav aria-label="Temple Filter Navigation">
+      <button data-filter="home">Home</button>
       <button data-filter="old">Old</button>
       <button data-filter="new">New</button>
       <button data-filter="large">Large</button>
@@ -30,9 +30,10 @@
   <main id="templeContainer" aria-live="polite"></main>
   
   <footer>
-    <p>&copy; <span id="year"></span> 🌍 Peace Oyovwe   🌍 Nigeria</p>  Last Modified: <span id="modified"></span></p>
+    <p>&copy; <span id="year"></span> 🌍 Peace Oyovwe 🌍 Nigeria — 
+    Last Modified: <span id="modified"></span></p>
   </footer>
 
-   <script src="scripts/filtered-temples.js" defer></script>
+  <script src="scripts/filtered-temples.js" defer></script>
 </body>
 </html>
