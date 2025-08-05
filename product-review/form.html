@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Product Review Form" />
+  <meta name="author" content="Your Name" />
+  <title>Product Review Form</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get" id="reviewForm">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Product Details</legend>
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Choose a product</option>
+          <option value="keyboard">Wireless Keyboard</option>
+          <option value="mouse">Bluetooth Mouse</option>
+          <option value="headphones">Noise Cancelling Headphones</option>
+          <option value="monitor">HD Monitor</option>
+        </select>
+
+        <p>Rate the Product:</p>
+        <label><input type="radio" name="rating" value="1" required> ⭐</label>
+        <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+        <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+        <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+        <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+
+        <p>What did you like? (check all that apply)</p>
+        <label><input type="checkbox" name="likes" value="quality"> Quality</label>
+        <label><input type="checkbox" name="likes" value="price"> Price</label>
+        <label><input type="checkbox" name="likes" value="features"> Features</label>
+        <label><input type="checkbox" name="likes" value="design"> Design</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your review..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Product Reviews Inc.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
