@@ -4,10 +4,6 @@
 const yearSpan = document.getElementById('year');
 const lastModifiedSpan = document.getElementById('lastModified');
 
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
-
-if (lastModifiedSpan) {
-  lastModifiedSpan.textContent = document.lastModified;
-}
+// main.js
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
