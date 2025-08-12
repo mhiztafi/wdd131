@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Peace Oyovwe Rafting to book your trip or ask questions." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Peace Oyovwe Rafting to book your trip or ask questions.">
   <title>Contact - Peace Oyovwe Rafting</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
@@ -11,115 +11,107 @@
   <script src="scripts/form.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Peace Oyovwe Rafting</h1>
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="logo-title">
+      <img src="images/logo.jpg" alt="Rafting logo" style="width: 50px;">
+          </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html"  class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-     <section class="info">
+    <section class="info">
       <h2>Contact Us</h2>
-      </section>
-      <section class="contact-info">
-      <p><strong>Address:</strong> 12 ogunu road, warri, Delta state</p>
-      <p><strong>Phone:</strong> (+234)(8141509925)</p>
+    </section>
+
+    <section class="contact-info">
+      <p><strong>Address:</strong> 12 Ogunu Road, Warri, Delta State</p>
+      <p><strong>Phone:</strong> (+234) 814 150 9925</p>
       <p><strong>Email:</strong> peaceoyovwe@riverrafting.com</p>
     </section>
 
     <section class="map">
       <h2>Find Us Here:</h2>
-      <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15884.906545370608!2d5.702544524452715!3d5.533363769025275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1749286670282!5m2!1sen!2sng"
-       allowfullscreen
-       loading="lazy">
+      <iframe class="map-frame"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15884.906545370608!2d5.702544524452715!3d5.533363769025275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1749286670282!5m2!1sen!2sng"
+        allowfullscreen
+        loading="lazy">
       </iframe>
-        </section>
+    </section>
 
-    <form id="bookingForm">
-      <label for="fullName">Full Name *</label>
-      <input type="text" id="fullName" name="fullName" required>
+    <section class="form-section">
+      <h2>Send Us a Message</h2>
+      <form id="bookingForm">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required>
 
-      <label for="email">Email *</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="tripDate">Preferred Trip Date *</label>
-      <input type="date" id="tripDate" name="tripDate" required>
+        <label for="tripDate">Preferred Trip Date *</label>
+        <input type="date" id="tripDate" name="tripDate" required>
 
-      <label for="groupSize">Group Size *</label>
-      <input type="number" id="groupSize" name="groupSize" min="1" required>
+        <label for="groupSize">Group Size *</label>
+        <input type="number" id="groupSize" name="groupSize" min="1" required>
 
-      <fieldset>
-  <legend>Purpose of Your Message</legend>
+        <fieldset>
+          <legend>Purpose of Your Message</legend>
 
-  <label for="general">
-    <input type="radio" id="general" name="purpose" value="general">
-    General Inquiry
-  </label><br>
+          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+          <label><input type="radio" name="purpose" value="booking"> Booking Request</label><br>
+          <label><input type="radio" name="purpose" value="feedback"> Feedback</label>
+        </fieldset>
 
-  <label for="booking">
-    <input type="radio" id="booking" name="purpose" value="booking">
-    Booking Request
-  </label><br>
-
-  <label for="feedback">
-    <input type="radio" id="feedback" name="purpose" value="feedback">
-    Feedback
-  </label>
-</fieldset>
-
-             <label for="message">Your Message:</label>
+        <label for="message">Your Message *</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="newsletter">
-        <input type="checkbox" name="subscribe" id="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label>
+        <label><input type="checkbox" name="subscribe" id="newsletter"> Subscribe me to the monthly newsletter</label>
 
-       <button type="submit" class="submit-button">Message us</button>
+        <button type="submit" class="submit-button">Message Us</button>
       </form>
-      </section>
+    </section>
 
     <section class="team">
       <h3>Meet Our Team</h3>
       <div class="profiles">
         <figure>
-          <img src="images/imgb1.jpg" alt="Photo of John Smith -Tour Guide ">
-          <figcaption>John Smith -Tour Guide</figcaption>
+          <img src="images/imgb1.jpg" alt="Photo of John Smith - Tour Guide" loading="lazy">
+          <figcaption>John Smith - Tour Guide</figcaption>
         </figure>
-        <figure>
-          <img src="images/imgc1.jpg" alt="Photo of John Smith - project manager">
-          <figcaption> Mike John  - Project manager</figcaption>
-        </figure>
-        <figure>
-          <img src="images/imga1.jpg" alt="Photo of Sarah Lee - Customer Support">
+               <figure>
+          <img src="images/customer.jpg" alt="Photo of Sarah Lee - Customer Support"  style="width: 200px;" loading="lazy">
           <figcaption>Sarah Lee - Customer Support</figcaption>
         </figure>
         <figure>
-          <img src="images/img21.png" alt="employee photo">
-          <figcaption>employee photo</figcaption>
+          <img src="images/rafting2.jpg" alt="Rafting team member" loading="lazy">
+          <figcaption>Rafting Team Member</figcaption>
         </figure>
         <figure>
-          <img src="images/img51.png" alt="rafting">
-          <figcaption>employee photo</figcaption>
+          <img src="images/img51.png" alt="Rafting scenery" loading="lazy">
+          <figcaption>Rafting Adventure</figcaption>
         </figure>
         <figure>
-          <img src="images/img31.png" alt="rafting">
-          <figcaption>employee photo</figcaption>
+          <img src="images/hero.jpg" alt="Rafting action" loading="lazy">
+          <figcaption>Rafting Action</figcaption>
         </figure>
       </div>
-    </section>       
+    </section>
   </main>
 
   <footer>
     <p>&copy; <span id="year"></span> Peace Oyovwe Rafting | All rights reserved</p>
     <p>Last Modified: <span id="lastModified"></span></p>
-     <a href="images/wireframe-desktop.jpg" target="_blank">View Local Wireframe</a>
+    <a href="images/wireframe-desktop.jpg" target="_blank">View Local Wireframe</a>
+    <a href="images/wireframe-mobile.jpg" target="_blank">View Local Wireframe</a>
   </footer>
 </body>
 </html>
+
+
