@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Peace Oyovwe Rafting offers thrilling whitewater rafting adventures led by certified guides in stunning natural settings." />
+  <meta name="description" content="Peace Oyovwe Rafting offers thrilling whitewater rafting adventures led by certified guides in stunning natural settings.">
   <meta name="author" content="Peace Oyovwe">
   <title>Peace Oyovwe Rafting | Home</title>
 
@@ -11,7 +11,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="styles/base.css">
@@ -21,12 +21,14 @@
   <script src="scripts/main.js" defer></script>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header role="banner">
     <div class="logo-title">
-      <h1>Peace Oyovwe Rafting</h1>
-    </div>
-    <nav role="navigation" aria-label="Main site navigation">
-      <ul class="nav-links">
+      <img src="images/logo.jpg" alt="Rafting logo" style="width: 50px;">
+          </div>
+    <nav>
+      <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="trips.html">Trips</a></li>
@@ -35,23 +37,19 @@
     </nav>
   </header>
 
-  <main role="main">
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-heading">
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Group rafting background" class="hero-bg">
+    <div class="hero-center">
+      <img src="images/hero-center.png" alt="Rafting action" class="center-img">
       <div class="hero-text">
-        <h2 id="hero-heading">Experience the Thrill of Water Rafting!</h2>
+        <h2>Adventure Awaits</h2>
         <p>Join us for unforgettable whitewater rafting experiences on some of the most scenic rivers in the region.</p>
-        <img src="images/rafting-hero.webp" alt="A group of people enjoying whitewater rafting" loading="lazy" width="800" height="450" />
       </div>
-    </section>
+  </section>
 
-     <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/img21.png" alt="Adventurous rafting" class="hero-img">
-      <h1 class="hero-text"></h1>
-    </section>
-
+  <!-- MAIN CONTENT -->
+  <main>
     <!-- Newsletter Signup -->
     <section class="newsletter">
       <h2>Stay in the Flow!</h2>
@@ -70,13 +68,11 @@
     <!-- Purpose & Offerings Grid -->
     <section class="grid-section">
       <div class="grid-item">
-        <img src="images/img51.png" alt="Group enjoying rafting">
         <h3>Our Mission</h3>
         <p>To bring people closer to nature and adventure through safe, fun, and exhilarating rafting experiences.</p>
       </div>
       <div class="grid-item">
-        <img src="images/img41.png" alt="Rafting gear">
-        <h3>What We Offer</h3>
+         <h3>What We Offer</h3>
         <p>We provide guided tours, professional gear, and routes suitable for all skill levels. Fun and safety guaranteed!</p>
       </div>
     </section>
@@ -95,16 +91,19 @@
     <section class="cta">
       <h2>Your Adventure Starts Here!</h2>
       <p>Check out our exciting trips and plan your perfect rafting experience.</p>
-         </section>
+    </section>
     <section class="cta" aria-label="Call to Action">
       <a href="trips.html" class="btn primary-btn">View Trips</a>
       <a href="contact.html" class="btn secondary-btn">Book Now</a>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer role="contentinfo">
     <p>&copy; <span id="year"></span> Peace Oyovwe Rafting | All rights reserved</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
+
 </body>
 </html>
+
