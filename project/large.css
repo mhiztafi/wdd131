@@ -1,37 +1,41 @@
-/* Larger screen styles */
+/* styles/larger.css */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .hero-center {
+    max-width: 600px;
+  }
+
+  .center-img {
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+}
+
+  /* Trips Grid */
+  .trip-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Navigation */
   nav ul {
-    justify-content: flex-end;
-    padding-right: 2rem;
+    justify-content: space-evenly;
   }
 
-  header {
-    text-align: left;
-    padding: 1rem 2rem;
-  }
-
-  main {
-    padding: 2rem;
-  }
-
-  .hero, .highlights, .cta {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-  }
-
+  /* Call-to-Action */
   .cta {
-    grid-template-columns: 1fr;
-    text-align: center;
+    padding: 2rem;
   }
 
-  form {
+  /* Trips Table Section */
+  .trip-table-section {
     padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #ffffff;
   }
 }
