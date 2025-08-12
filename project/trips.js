@@ -1,42 +1,49 @@
-// trips.js
+// scripts/trips.js
 
 document.addEventListener("DOMContentLoaded", () => {
+  
+  // === Footer Dates ===
+  const yearEl = document.getElementById("year");
+  const lastModifiedEl = document.getElementById("lastModified");
+
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+  if (lastModifiedEl) {
+    lastModifiedEl.textContent = document.lastModified;
+  }
+
+  // === Trip Data ===
   const trips = [
     {
-      name: "Rapid Rush",
-      difficulty: "Intermediate",
-      price: "$120",
-      description: "A thrilling ride through class III rapids, perfect for adventure seekers!",
-      image: "images/rapid-rush.webp"
+      name: "Morning Rapids Blast",
+      image: "images/img21.png",
+      alt: "Morning rafting adventure",
+      description: "Start your day with excitement! A quick morning session with moderate rapids and fresh air."
     },
     {
-      name: "Calm Waters",
-      difficulty: "Beginner",
-      price: "$80",
-      description: "A scenic float down the river for first-timers and families.",
-      image: "images/calm-waters.webp"
-    },
-    {
-      name: "Thunder Run",
-      difficulty: "Advanced",
-      price: "$150",
-      description: "Challenge yourself with steep drops and big waves on this adrenaline-fueled ride.",
-      image: "images/thunder-run.webp"
+      name: "Sunset River Drift",
+      image: "images/img51.png",
+      alt: "Evening calm rafting",
+      description: "A relaxing sunset float through scenic rivers. Great for photography and peaceful views."
     }
   ];
 
+  // === Render Trips ===
   const container = document.getElementById("tripContainer");
 
-  trips.forEach(trip => {
-    const card = document.createElement("div");
-    card.classList.add("trip-card");
-    card.innerHTML = `
-      <img src="${trip.image}" alt="${trip.name}" loading="lazy">
-      <h3>${trip.name}</h3>
-      <p><strong>Difficulty:</strong> ${trip.difficulty}</p>
-      <p><strong>Price:</strong> ${trip.price}</p>
-      <p>${trip.description}</p>
-    `;
-    container.appendChild(card);
-  });
+  if (container) {
+    trips.forEach(({ name, image, alt, description }) => {
+      const section = document.createElement("section");
+      section.classList.add("trip");
+
+      section.innerHTML = `
+        <img src="${image}" alt="${alt}" loading="lazy">
+        <h3>${name}</h3>
+        <p>${description}</p>
+      `;
+
+      container.appendChild(section);
+    });
+  }
 });
