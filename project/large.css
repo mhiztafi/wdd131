@@ -1,0 +1,41 @@
+/* styles/larger.css */
+
+@media screen and (min-width: 768px) {
+  .hero-center {
+    max-width: 600px;
+  }
+
+  .center-img {
+    width: 250px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+  }
+}
+
+  /* Trips Grid */
+  .trip-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Navigation */
+  nav ul {
+    justify-content: space-evenly;
+  }
+
+  /* Call-to-Action */
+  .cta {
+    padding: 2rem;
+  }
+
+  /* Trips Table Section */
+  .trip-table-section {
+    padding: 2rem;
+  }
+}

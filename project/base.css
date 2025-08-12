@@ -1,0 +1,200 @@
+/* === Global Styles === */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+/* === Header & Navigation === */
+header {
+  position: flex-wrap;          /* Stays at the top even when scrolling */
+  top: 0;                   /* Aligns to very top */
+  left: 0;
+  width:96%;              /* Full width */
+  display: flex;
+  justify-content: space-between; /* space between logo and nav */
+  align-items: top;           /* vertical alignment */
+  padding: 1rem 2rem;
+  background-color: #fff;   /* Ensure background covers content behind */
+  z-index: 1000;            /* Keeps it above other elements */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+}
+
+/* Prevent content from being hidden behind the fixed header */
+body {
+  padding-top: 0px; /* Adjust this to match header height */
+}
+
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #0077cc;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* === Main Content === */
+main {
+  padding: 2rem;
+}
+
+/* === Trips Grid & Table === */
+.trip-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trip {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: open;
+  border-radius: 1px;
+}
+
+.trip-table-section {
+  margin-top: 3rem;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.trip-table th {
+  background-color: #eaeaea;
+}
+
+/* === Call-to-Action Buttons === */
+.cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f77f00;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-center {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 50%;
+}
+
+.center-text {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  line-height: 1.4;
+}
+
+
+/* === Social Media Icons === */
+.social-media {
+  margin-top: 1rem;
+  width= 20px;
+}
+
+.social {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* === Profiles Section === */
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.profiles figure {
+  flex: 1 1 calc(20% - 1rem);
+  text-align: center;
+  margin: 0;
+}
+
+.profiles img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
