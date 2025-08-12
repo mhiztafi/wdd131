@@ -166,7 +166,7 @@ main {
 /* === Social Media Icons === */
 .social-media {
   margin-top: 1rem;
-  width= 20px;
+  width: 20px;
 }
 
 .social {
@@ -196,5 +196,19 @@ main {
   border-radius: 8px;
 }
 
+footer {
+  background-color: #003049;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
 
+footer p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+#lastModified {
+  color: #ffd166;
+}
 
