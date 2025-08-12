@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore rafting trip packages with Peace Oyovwe Rafting." />
-  <title>Trips - Peace Oyovwe Rafting</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore exciting rafting trip packages with Peace Oyovwe Rafting.">
+  <meta name="author" content="Peace Oyovwe">
+  <title>Trips | Peace Oyovwe Rafting</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- CSS Styles -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- JavaScript -->
   <script src="scripts/trips.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Peace Oyovwe Rafting</h1>
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="logo-title">
+      <img src="images/logo.jpg" alt="Rafting logo" style="width: 50px;">
+          </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -23,43 +36,43 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Trip Packages</h2>
-    <section id="tripContainer">
-      <!-- Dynamic trip cards will be injected here -->
+  <main role="main">
+    <section aria-label="Trip Packages">
+      <h2>Trip Packages</h2>
+      <section id="tripContainer">
+        <!-- Dynamic trip cards will be injected here via JavaScript -->
+      </section>
     </section>
 
-    <!-- Trip Descriptions -->
-    <section class="trip-grid">
+    <section class="trip-grid" aria-label="Featured Trips">
       <div class="trip">
-        <img src="images/img21.png" alt="Beginner rafting trip" />
-        <h2>River Splash Starter</h2>
+        <img src="images/hero-center.png" alt="Beginner rafting trip" loading="lazy">
+        <h3>River Splash Starter</h3>
         <p>Perfect for first-timers. A fun-filled half-day ride with gentle rapids and scenic views. Great for families and kids!</p>
       </div>
 
       <div class="trip">
-        <img src="images/rafting.jpg" alt="Intermediate rafting trip"S>
-        <h2>Whitewater Thrill</h2>
-        <p>Experience mid level rapids and splash zones on this full day trip. Includes lunch and breaks on riverside beaches.</p>
+        <img src="images/rafting2.jpg" alt="Intermediate rafting trip" loading="lazy">
+        <h3>Whitewater Thrill</h3>
+        <p>Experience mid-level rapids and splash zones on this full-day trip. Includes lunch and riverside beach breaks.</p>
       </div>
 
       <div class="trip">
-        <img src="images/img31.png" alt="Extreme rafting trip" />
-        <h2>Extreme Rush Expedition</h2>
-        <p>For seasoned adventurers. 2 day camping and class IV-V rapids in remote wilderness. Safety gear and guides provided.</p>
+        <img src="images/img51.png" alt="Extreme rafting expedition" loading="lazy" />
+        <h3>Extreme Rush Expedition</h3>
+        <p>For seasoned adventurers. 2-day camping trip with class IV-V rapids. Safety gear and expert guides provided.</p>
       </div>
     </section>
 
-    <!-- Trip Table -->
-    <section class="trip-table-section">
+    <section class="trip-table-section" aria-label="Trip Comparison Table">
       <h2>Trip Comparison</h2>
       <table class="trip-table">
         <thead>
           <tr>
-            <th>Trip Name</th>
-            <th>Difficulty</th>
-            <th>Duration</th>
-            <th>Price</th>
+            <th scope="col">Trip Name</th>
+            <th scope="col">Difficulty</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Price</th>
           </tr>
         </thead>
         <tbody>
@@ -85,21 +98,22 @@
       </table>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta">
+    <section class="cta" aria-label="Call to Action">
       <h2>Ready to Ride?</h2>
-      <p>Get in touch with us today to book your rafting adventure!</p>
-      <a href="contact.html" class="btn">Contact Us</a>
+      <p>Get in touch with us today to book your next rafting adventure!</p>
+      <a href="contact.html" class="btn primary-btn">Contact Us</a>
     </section>
   </main>
-  <footer>
-     <p>&copy; <span id="year"></span> Peace Oyovwe Rafting | All rights reserved</p>
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> Peace Oyovwe Rafting | All rights reserved</p>
     <p>Last Modified: <span id="lastModified"></span></p>
-      <a href="images/wireframe-destop.jpg" target="_blank"> Local Wireframe</a>
-    <div class="social-media">
-      <img class="social" src="images/facebook.jpeg" alt="facebook" width="20">
-      <img class="social" src="images/instagram.jpeg" alt="instagram" width="20">
-      <img class="social" src="images/twitter.jpeg" alt="twitter" width="20">
+    <a href="images/wireframe-destop.jpg" target="_blank">View Local Wireframe</a>
+    <a href="images/wireframe-mobile.jpg" target="_blank">View Local Wireframe</a>
+    <div class="social-media" aria-label="Social Media Links">
+      <a href="#"><img class="social" src="images/facebook.png" alt="Facebook icon" width="20"></a>
+      <a href="#"><img class="social" src="images/instagram.jpeg" alt="Instagram icon" width="20"></a>
+      <a href="#"><img class="social" src="images/twitter.jpeg" alt="Twitter icon" width="20"></a>
     </div>
   </footer>
 </body>
